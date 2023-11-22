@@ -67,7 +67,8 @@
     margin: 15px 0;
 }
 
-.MenuContainer .title {
+.MenuContainer .title,
+.playListContainer .nameContainer {
     color: #848484;
     font-size: 12px;
     font-weight: bold;
@@ -123,3 +124,62 @@
     color: #f1f1f1;
     transition: .3s;
 }
+
+.playListContainer {
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.playListContainer .nameContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+.playListContainer .nameContainer p {
+    font-size: 12px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.playListContainer .nameContainer {
+    cursor: pointer;
+    color: white;
+}
+
+.playListContainer .playListScroll {
+    height: 140px;
+overflow-x: hidden;
+overflow-y: auto;
+position: relative;
+}
+
+.playListContainer .playListScroll .playList {
+    display: flex;
+    color: #848484;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.playListContainer .playListScroll .playList .list i{
+font-size: 18px;
+}
+
+.playListContainer .playListScroll .playList .list { 
+    margin-right: 15px;
+}
+
+.playListContainer .playListScroll .playList .trash {
+    margin-left: auto;
+}
+
+.playListContainer .playListScroll .playList p{
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+}
+
