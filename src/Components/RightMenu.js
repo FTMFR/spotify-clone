@@ -1,8 +1,12 @@
 import React from 'react';
+import '../Styles/RightMenu.css';
+
 
 const RightMenu = () => {
   return (
-    <div>RightMenu</div>
+    <div className='rightMenu'>
+      
+    </div>
   );
 };
 
